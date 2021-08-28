@@ -69,9 +69,7 @@ public class OrdenController {
 		orden.setCliente(new Cliente(nombre,telefono));
 		orden.setTotalProductos(this.totalProductos(cantidades));
 		orden.setEstadoEntrega(orden_dao.getEntrega(1));
-		
-		//List<DetalleOrden> ordenes = this.getOrdenes(listaProductos, orden, importes, cantidades);	
-	
+			
 		List<Producto> productoElegidos = new ArrayList<>();
 		Producto p;
 		
